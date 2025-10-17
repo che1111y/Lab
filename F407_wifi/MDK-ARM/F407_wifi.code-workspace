@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "string.h": "c",
+            "stm32f4xx_hal_uart.h": "c",
+            "bsp_esp8266_mqtt.h": "c",
+            "usart.h": "c",
+            "main.h": "c"
+        }
+    },
+    "extensions": {}
+}

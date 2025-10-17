@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "sys.h": "c",
+        "ads1256.h": "c",
+        "mppt_p_o.h": "c",
+        "delay.h": "c",
+        "stm32f10x.h": "c",
+        "mppt_output.h": "c",
+        "pwm.h": "c",
+        "usart.h": "c",
+        "temperature.h": "c",
+        "stm32f10x_it.h": "c",
+        "board.h": "c",
+        "spi.h": "c",
+        "stdio.h": "c",
+        "cmath": "c",
+        "gpio_init.h": "c",
+        "oled.h": "c",
+        "math.h": "c"
+    },
+    "KeilAssistant.Keil.HOME": {
+        "MDK": "D:\\Keil_v5\\UV4\\UV4.exe"
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "main.h": "c",
+            "tim.h": "c",
+            "fuzzypid.h": "c",
+            "usart.h": "c",
+            "ads1256.h": "c",
+            "filter.h": "c",
+            "gpio.h": "c",
+            "math.h": "c",
+            "stdio.h": "c",
+            "stdlib.h": "c",
+            "delay.h": "c"
+        },
+        "Codegeex.RepoIndex": true
+    },
+    "extensions": {},
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "cmsis-dap",                                          //用的什么仿真stlink还是jlink
+                "cwd": "${workspaceRoot}",
+                "executable": "./build/F407_ADS1256/F407_ADS1256.elf",//可执行文件的路径，你看你自己的是在哪
+                "request": "launch",
+                "type": "cortex-debug",
+                // "svdFile": "C:/Users/chelly/.vscode/extensions/marus25.cortex-debug-dp-stm32f4-1.0.0/data/",//svd文件路径，这个加了就是能看寄存器的值
+                "servertype": "openocd",                                    //用openocd我这里是openocd，你看你自己用的什么
+                "configFiles": [
+                    "interface/cmsis-dap.cfg",                                 //openocd下的文件
+                    "target/stm32f4x.cfg"                                   // 同上
+                ],
+                "runToEntryPoint": "main",
+                "liveWatch": {
+                    "enabled": true,
+                    "samplesPerSecond": 4
+                }
+            }
+            
+
+        ]
+    }
+}
